@@ -48,9 +48,9 @@
         <Name>MovPicNFO</Name>
         <Id>abbd030d-2132-4d0b-b978-915db23ea93c</Id>
         <Author>Scrounger</Author>
-        <HomePage />
+        <HomePage>http://code.google.com/p/movpicnfo/</HomePage>
         <ForumPage>http://forum.team-mediaportal.com/threads/movpicnfo-v-1-0-1-1.108725/</ForumPage>
-        <UpdateUrl />
+        <UpdateUrl>http://movpicnfo.googlecode.com/git/MovPicToNFO/MPE1/update.xml</UpdateUrl>
         <Version>
           <Major>1</Major>
           <Minor>0</Minor>
@@ -58,8 +58,6 @@
           <Revision>0</Revision>
         </Version>
         <ExtensionDescription>A little tool to manage your movies of your MediaPortal Moving Pictures database.
-
-
 
 Save all Movie infos in your current movie folder (infos (xbmc standard), Cover and FanArt). You can also save your watch status in you movie </ExtensionDescription>
         <VersionDescription />

@@ -167,9 +167,9 @@ Go to your MediaPortal Program Files dircetorie and excute the MovPicNFO.exe fil
     <Name>MovPicNFO</Name>
     <Id>abbd030d-2132-4d0b-b978-915db23ea93c</Id>
     <Author>Scrounger</Author>
-    <HomePage />
+    <HomePage>http://code.google.com/p/movpicnfo/</HomePage>
     <ForumPage>http://forum.team-mediaportal.com/threads/movpicnfo-v-1-0-1-1.108725/</ForumPage>
-    <UpdateUrl />
+    <UpdateUrl>http://movpicnfo.googlecode.com/git/MovPicToNFO/MPE1/update.xml</UpdateUrl>
     <Version>
       <Major>1</Major>
       <Minor>0</Minor>
@@ -177,8 +177,6 @@ Go to your MediaPortal Program Files dircetorie and excute the MovPicNFO.exe fil
       <Revision>0</Revision>
     </Version>
     <ExtensionDescription>A little tool to manage your movies of your MediaPortal Moving Pictures database.
-
-
 
 Save all Movie infos in your current movie folder (infos (xbmc standard), Cover and FanArt). You can also save your watch status in you movie </ExtensionDescription>
     <VersionDescription />
@@ -232,7 +230,7 @@ Save all Movie infos in your current movie folder (infos (xbmc standard), Cover 
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\..\Graphics\logo.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{5069fead-cd3a-4f23-8585-c8b1b9226f28}-logo.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{52ee59e9-0246-4cac-bf4b-47e6a00c49b8}-logo.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
     </Items>
