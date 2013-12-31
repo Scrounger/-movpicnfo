@@ -159,7 +159,6 @@ Public Class MovingPicturesDB
         End Get
     End Property
 
-
     'Get DBFields over Index
     Private _Item As New MovingPicturesItem
     Default Public ReadOnly Property MovingPictures(ByVal Index As Integer) As MovingPicturesItem

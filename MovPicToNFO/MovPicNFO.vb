@@ -64,9 +64,10 @@ Public Class MovPicNFO
             Dim mpaa As XmlElement = XmlDoc.CreateElement("mpaa")
             Dim language As XmlElement = XmlDoc.CreateElement("language")
             Dim id As XmlElement = XmlDoc.CreateElement("id")
-            Dim genre As XmlElement = XmlDoc.CreateElement("genre")
+            'Dim genre As XmlElement = XmlDoc.CreateElement("genre")
             Dim director As XmlElement = XmlDoc.CreateElement("director")
             Dim originaltitle As XmlElement = XmlDoc.CreateElement("originaltitle")
+            Dim watched As XmlElement = XmlDoc.CreateElement("watched")
             'Dim popularity As XmlElement = XmlDoc.CreateElement("popularity")
 
             'append the nodes to the parentNode without the value
@@ -81,16 +82,15 @@ Public Class MovPicNFO
             RootNode.AppendChild(mpaa)
             RootNode.AppendChild(language)
             RootNode.AppendChild(id)
-            RootNode.AppendChild(genre)
+            'RootNode.AppendChild(genre)
             RootNode.AppendChild(director)
             RootNode.AppendChild(studios)
+            RootNode.AppendChild(watched)
             'RootNode.AppendChild(popularity)
 
             'save the value of the fields into the nodes
             Dim _MovPicDb As New MovingPicturesDB
             _MovPicDb.LoadMovieInfos(idMovie)
-
-
 
             title.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).Title))
             sorttitle.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).sortby))
@@ -103,13 +103,27 @@ Public Class MovPicNFO
             mpaa.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).certification))
             language.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).language))
             id.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).imdb_id))
-            genre.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).genre))
+            'genre.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).genre))
             director.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).directors))
             studios.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).studios))
+            watched.AppendChild(XmlDoc.CreateTextNode(_MovPicDb.WatchStatus(idMovie)))
+
             'popularity.AppendChild(XmlDoc.CreateTextNode(_MovPicDb(0).popularity))
+
+            'Genre einzeln schreiben
+            Dim Genres As String() = _MovPicDb(0).genre.Split(New Char() {"|"c})
+            For Each _genre In Genres
+                If Not String.IsNullOrEmpty(_genre) Then
+                    Dim XMLgenre As XmlElement = XmlDoc.CreateElement("genre")
+                    RootNode.AppendChild(XMLgenre)
+                    XMLgenre.AppendChild(XmlDoc.CreateTextNode(_genre))
+                End If
+            Next
 
             'Schauspieler übertragen
             Dim arrList As New ArrayList(_MovPicDb(0).Actors.Split("|"))
+
+
 
             For i = 0 To arrList.Count - 1
                 If Not String.IsNullOrEmpty(arrList(i).ToString) Then
@@ -151,6 +165,9 @@ Public Class MovPicNFO
                     Actor.AppendChild(XmlDoc.CreateTextNode(arrList(i).ToString))
                 End If
             Next
+
+
+
 
             'Save to the XML file
             XmlDoc.Save(filename)

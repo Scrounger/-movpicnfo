@@ -46,11 +46,11 @@
   </Settings>
   <Settings>
     <Key>ExportCoverFile</Key>
-    <Value>False</Value>
+    <Value>True</Value>
   </Settings>
   <Settings>
     <Key>ExportFanArtFile</Key>
-    <Value>False</Value>
+    <Value>True</Value>
   </Settings>
   <Settings>
     <Key>ExportImDbFile</Key>
@@ -58,11 +58,11 @@
   </Settings>
   <Settings>
     <Key>ExportCoverFileName</Key>
-    <Value>folder.jpg</Value>
+    <Value>%Filename%.jpg</Value>
   </Settings>
   <Settings>
     <Key>ExportFanArtFileName</Key>
-    <Value>backdrop.jpg</Value>
+    <Value>%Filename%L.jpg</Value>
   </Settings>
   <Settings>
     <Key>ImportWatchStatus</Key>
@@ -74,6 +74,6 @@
   </Settings>
   <Settings>
     <Key>ExportWatchStatus</Key>
-    <Value>True</Value>
+    <Value>False</Value>
   </Settings>
 </NewDataSet>

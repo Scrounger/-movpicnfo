@@ -11,7 +11,6 @@ D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\log4net.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\BassRegistration.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Interop.X10.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\RemotePlugins.dll
-D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Interop.SHDocVw.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Gentle.Framework.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\edtftpnet-1.2.2.dll
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Interop.WMPLib.dll
@@ -31,8 +30,13 @@ D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.MovPicNFO.resources
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.ImagePrview.resources
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.Resources.resources
-D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.vbproj.GenerateResource.Cache
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.exe
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.pdb
 D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\MovPicNFO.xml
 D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\MovPicNFO.xml
+D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\WinCustomControls.dll
+D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\MovPicNFO.exe.config
+D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+D:\Projekte\MovPicNFO\MovPicToNFO\bin\x86\Debug\Microsoft.WindowsAPICodePack.dll
+D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projekte\MovPicNFO\MovPicToNFO\obj\x86\Debug\GenerateResource.write.1.tlog
